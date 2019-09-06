@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.ansar.utilities.AnotationTransformer"/>
+  </listeners>
+  <test thread-count="5" name="Test1(failed)" parallel="methods">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.ansar.testcases.sampletest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="aftersuit"/>
+          <include name="Befortest"/>
+          <include name="afterMethod"/>
+          <include name="placeurl"/>
+          <include name="config"/>
+        </methods>
+      </class> <!-- com.ansar.testcases.sampletest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
